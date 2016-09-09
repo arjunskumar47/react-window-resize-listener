@@ -10,7 +10,7 @@ export default class ReactWindowResizeListener extends React.Component {
 				display: 'none',
 				visibility: 'hidden'
 			}
-		}
+		};
 	}
 
 	componentDidMount() {
@@ -27,15 +27,16 @@ export default class ReactWindowResizeListener extends React.Component {
 		}
 	}
 
-	handleResize() {
-		if( typeof this.props.onResize !== 'undefined')
-			this.props.onResize();
+	handleResize(event) {
+		if( typeof this.props.onResize !== 'undefined' ) {
+			this.props.onResize(event);
+		}
 	}
 
 	render() {
 		return (
 			<div style={this.state.style}></div>
-		)
+		);
 	}
 	
 }

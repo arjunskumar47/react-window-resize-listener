@@ -1,6 +1,6 @@
 # React Window Resize Listener
 
-__COMPONENT DESCRIPTION GOES HERE__
+This React component can be used to execute some tasks when the window resize event is triggered.
 
 
 ## Demo & Examples
@@ -30,21 +30,35 @@ npm install react-window-resize-listener --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
+You can use it in multiple components if you want to listen to window resize event in several components and execute some task based on the event.
 
 ```
-var ReactWindowResizeListener = require('react-window-resize-listener');
+import React from 'react';
+import ReactWindowResizeListener from 'react-window-resize-listener';
 
-<ReactWindowResizeListener>Example</ReactWindowResizeListener>
+export default class MyComponentName extends React.Component {
+
+	constructor() {
+		super();
+		this.resizeHandler = this.resizeHandler.bind(this);
+	}
+
+	resizeHandler(event) {
+		// Do Something
+	}
+
+	render() {
+		return(
+			<div>
+				<ReactWindowResizeListener onResize={this.resizeHandler} />
+			</div>
+		)
+	}
+
+}
 ```
 
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
-
-### Notes
-
-__ADDITIONAL USAGE NOTES__
+Props associated with the component [`onResize`] can be used to pass a callback function which can be utilized to execute some task based on window resize event.
 
 
 ## Development (`src`, `lib` and the build process)
@@ -53,9 +67,4 @@ __ADDITIONAL USAGE NOTES__
 
 To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
 
-## License
-
-__PUT LICENSE HERE__
-
-Copyright (c) 2016 Arjun S Kumar.
 
