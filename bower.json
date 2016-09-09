@@ -1,0 +1,29 @@
+{
+  "name": "react-window-resize-listener",
+  "version": "0.0.0",
+  "description": "React Window Resize Listener",
+  "main": "dist/react-window-resize-listener.min.js",
+  "homepage": "https://github.com/arjunskumar47/react-window-resize-listener",
+  "authors": [
+    "Arjun S Kumar"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
