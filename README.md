@@ -5,8 +5,6 @@ This React component can be used to execute some tasks when the window resize ev
 
 ## Demo & Examples
 
-Live demo: [arjunskumar47.github.io/react-window-resize-listener](http://arjunskumar47.github.io/react-window-resize-listener/)
-
 To build the examples locally, run:
 
 ```
