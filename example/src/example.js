@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactWindowResizeListener from 'react-window-resize-listener';
+import ReactWindowResizeListener from 'window-resize-listener-react';
 
 class App extends React.Component {
 	

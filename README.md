@@ -22,7 +22,7 @@ The easiest way to use react-window-resize-listener is to install it from NPM an
 You can also use the standalone build by including `dist/react-window-resize-listener.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
-npm install react-window-resize-listener --save
+npm install window-resize-listener-react --save
 ```
 
 
@@ -32,7 +32,7 @@ You can use it in multiple components if you want to listen to window resize eve
 
 ```
 import React from 'react';
-import ReactWindowResizeListener from 'react-window-resize-listener';
+import ReactWindowResizeListener from 'window-resize-listener-react';
 
 export default class MyComponentName extends React.Component {
 
