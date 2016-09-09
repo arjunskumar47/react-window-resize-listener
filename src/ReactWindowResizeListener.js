@@ -22,7 +22,9 @@ export default class ReactWindowResizeListener extends React.Component {
 	}
 
 	componentWillUnmount() {
-		window.removeListener('resize', this.handleResize, false);
+		if( typeof window !== 'undefined' ) {
+			window.removeListener('resize', this.handleResize, false);
+		}
 	}
 
 	handleResize() {
