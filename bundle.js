@@ -47,7 +47,7 @@ var ReactWindowResizeListener = (function (_React$Component) {
 		key: 'componentWillUnmount',
 		value: function componentWillUnmount() {
 			if (typeof window !== 'undefined') {
-				window.removeListener('resize', this.handleResize, false);
+				window.removeEventListener('resize', this.handleResize, false);
 			}
 		}
 	}, {
