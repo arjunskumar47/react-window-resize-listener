@@ -1,6 +1,6 @@
 {
   "name": "window-resize-listener-react",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "React Window Resize Listener",
   "main": "lib/ReactWindowResizeListener.js",
   "author": "Arjun S Kumar",
