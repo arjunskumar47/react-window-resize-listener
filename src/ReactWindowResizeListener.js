@@ -1,16 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class ReactWindowResizeListener extends React.Component {
+const DEFAULT_STYLE = {
+	display: 'none',
+	visibility: 'hidden'
+};
+
+class ReactWindowResizeListener extends React.Component {
 
 	constructor() {
 		super();
+		
 		this.handleResize = this.handleResize.bind(this);
-		this.state = {
-			style: {
-				display: 'none',
-				visibility: 'hidden'
-			}
-		};
 	}
 
 	componentDidMount() {
@@ -35,8 +36,14 @@ export default class ReactWindowResizeListener extends React.Component {
 
 	render() {
 		return (
-			<div style={this.state.style}></div>
+			<div style={DEFAULT_STYLE} />
 		);
 	}
 	
 }
+
+ReactWindowResizeListener.PropTypes = {
+	onResize: PropTypes.func
+};
+
+export default ReactWindowResizeListener;
